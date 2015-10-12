@@ -16,6 +16,8 @@ namespace TicTacToe
     {
         private readonly GameVisualizer _gameVisualizer;
         private readonly GameEngine _gameEngine;
+        IPlayer player1;
+        IPlayer player2;
 
         public GameManager(GameVisualizer gameVisualizer, GameEngine gameEngine)
         {
