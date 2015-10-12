@@ -55,6 +55,7 @@ namespace TicTacToe
             var Winner = String.Empty;
             var currentPlayer = player1;
 
+            _gameVisualizer.PrintTicTacToeBoard(ticTacToeBoard);
             while (Winner.Equals(string.Empty))
             {
                 Console.WriteLine("Enter position X for {0}", currentPlayer);
@@ -74,6 +75,7 @@ namespace TicTacToe
             }
 
             Console.WriteLine("The winner is {0}", Winner);
+            Console.ReadKey();
         }
     }
 }
